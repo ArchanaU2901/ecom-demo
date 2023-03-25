@@ -92,9 +92,9 @@ const Checkout = () => {
                             </div>
                         </form>
                     </div>
-                    <div class="flex flex-col w-full ml-0 lg:ml-12 lg:w-2/5">
+                    <div class="flex flex-col w-full ml-0 lg:ml-12 lg:w-2/5 md:border-[2px] md:pl-3 md:ml-4">
                         <div class="pt-12 md:pt-0 2xl:ps-4">
-                            <h2 class="text-xl font-bold">Order Summary
+                            <h2 class="text-xl font-bold">Your Order
                             </h2>
                             <div class="mt-8">
                                 <div class="flex flex-col space-y-4">
