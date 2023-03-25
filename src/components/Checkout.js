@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import YourCard from './YourCard'
 const Checkout = () => {
     const data = [
         {
@@ -10,18 +11,34 @@ const Checkout = () => {
             price: " Price $70",
 
         },
-        
 
 
+
+    ]
+
+
+    const list = [
+        {
+            title: "Subtotal",
+            price: "$70"
+        },
+        {
+            title: "Coupon Code",
+            price: "Add Coupon"
+        },
+        {
+            title: "Grand Total",
+            price: "$70"
+        }
     ]
     return (
         <div>
             <div class="mt-20">
                 <h1 class="flex items-center justify-center font-bold text-blue-600 text-md lg:text-3xl">
-                    Checkout Page 
+                    Checkout Page
                 </h1>
             </div>
-            <div class="container p-12 mx-auto">
+            <div class="container ml-auto">
                 <div class="flex flex-col w-full px-0 mx-auto md:flex-row">
                     <div class="flex flex-col md:w-full">
                         <h2 class="mb-4 font-bold md:text-xl text-heading ">Shipping Address
@@ -92,7 +109,7 @@ const Checkout = () => {
                             </div>
                         </form>
                     </div>
-                    <div class="flex flex-col w-full ml-0 lg:ml-12 lg:w-2/5 md:border-[2px] md:pl-3 md:ml-4">
+                    {/* <div class="flex flex-col w-full ml-0 lg:ml-12 lg:w-2/5 md:border-[2px] md:pl-3 md:ml-4">
                         <div class="pt-12 md:pt-0 2xl:ps-4">
                             <h2 class="text-xl font-bold">Your Order
                             </h2>
@@ -135,6 +152,10 @@ const Checkout = () => {
                                 class="flex items-center w-full py-4 text-sm font-semibold border-b border-gray-300 lg:py-5 lg:px-3 text-heading last:border-b-0 last:text-base last:pb-0">
                                 Total<span class="ml-2">$80.00</span></div>
                         </div>
+                    </div> */}
+
+                    <div class="flex flex-col  ml-0 lg:ml-12 lg:w-3/5 md:border-[2px] md:pl-3 md:ml-4">
+                        <YourCard />
                     </div>
                 </div>
             </div>
